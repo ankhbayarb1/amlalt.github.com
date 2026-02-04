@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Асуулт</title>
+</head>
+<body>
+
+<h2>Хүүдээ шинэ утас авч өгөх үү?</h2>
+
+<button onclick="yesClick()">Тийм</button>
+<button onclick="noClick()">Үгүй</button>
+
+<p id="result" style="font-weight:bold; margin-top:20px;"></p>
+
+<script>
+    function yesClick() {
+        document.getElementById("result").innerText = "Та амласан шүү!";
+    }
+
+    function noClick() {
+        // Үгүй дарсан ч логик өөрчлөгдөж авч өгнө 😄
+        document.getElementById("result").innerText = 
+            "Тийм мэдээж авч өгнө 😄\nТа амласан шүү!";
+    }
+</script>
+
+</body>
+</html>
